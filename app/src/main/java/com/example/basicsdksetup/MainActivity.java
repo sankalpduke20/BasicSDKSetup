@@ -1,11 +1,15 @@
 package com.example.basicsdksetup;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,11 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        System.out.println("to remove");
     }
 
-    public void jumpToManageLoads(View view) {
+    public void navigateToManageLoads(View view) {
 
         Toast.makeText(this, "Follow the steps given in the documentation to integrate the library.", Toast.LENGTH_LONG).show();
 

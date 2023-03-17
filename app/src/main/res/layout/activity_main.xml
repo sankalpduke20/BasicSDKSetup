@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/border"
-        android:onClick="jumpToManageLoads"
+        android:onClick="navigateToManageLoads"
         android:padding="10dp">
 
         <TextView
